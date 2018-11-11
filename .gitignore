@@ -1,0 +1,4 @@
+/node_modules/
+/ps_modules/
+/env.ts
+/package-lock.json
