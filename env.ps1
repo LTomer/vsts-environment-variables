@@ -2,4 +2,4 @@
 [CmdletBinding()]
 param()
 
-get-childitem -Path env:*
+get-childitem -Path env:* | Format-Table -AutoSize
