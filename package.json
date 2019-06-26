@@ -5,19 +5,19 @@
   "main": "ftpuploadtask.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/vsts-tasks.git"
+    "url": "git+https://github.com/LTomer/vsts-environment-variables.git"
   },
-  "author": "Microsoft Corporation",
+  "author": "Tomer Levit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Microsoft/vsts-tasks/issues"
+    "url": "https://github.com/LTomer/vsts-environment-variables/issues"
   },
-  "homepage": "https://github.com/Microsoft/vsts-tasks#readme",
+  "homepage": "https://github.com/LTomer/vsts-environment-variables/blob/master/README.md",
   "dependencies": {
-    "parse-json": "^4.0.0",
-    "vsts-task-lib": "^2.6.0"
+    "lodash": "^4.17.11",
+    "vsts-task-lib": "^2.7.0"
   },
   "devDependencies": {
-    "@types/node": "^10.5.6"
+    "@types/node": "^12.0.10"
   }
 }
