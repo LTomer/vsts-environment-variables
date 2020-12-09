@@ -1,0 +1,44 @@
+{
+    "manifestVersion": 1,
+    "id": "environment-variables",
+    "name": "Environment Variables",
+    "version": "0.0.3",
+    "publisher": "Tomer",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Show Environment Variables.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "Images/EV-128.png"        
+    },
+    "files": [
+        {
+            "path": "Task"
+        }
+    ],
+    "tags": [
+        "Environment Variables", "Variable"
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/LTomer/vsts-environment-variables"
+    },
+    "contributions": [
+        {
+            "id": "environment-variables",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Show Environment Variables.",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Task"
+            }
+        }
+    ]
+}
