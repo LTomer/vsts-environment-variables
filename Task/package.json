@@ -2,6 +2,7 @@
   "name": "environment_variables",
   "version": "1.0.1",
   "description": "Show Environment Variables",
+  "main": "env.js",
   "keywords": [
     "environment"
   ],
@@ -16,10 +17,10 @@
   },
   "homepage": "https://github.com/LTomer/vsts-environment-variables/blob/master/README.md",
   "dependencies": {
-    "azure-pipelines-task-lib": "^2.10.0"
+    "azure-pipelines-task-lib": "^2.11.3"
   },
   "devDependencies": {
-    "@types/node": "^14.6.0",
+    "@types/node": "^10.17.48",
     "@types/q": "^1.5.4"
   }
 }
