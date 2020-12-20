@@ -1,11 +1,10 @@
 export function PrintVariable(): void {
-    // Push each JSON Object entry in array by [key, value]
+
     let maxSize=0;
     var jsObj = process.env
     for(var key in jsObj)
     {
-        if(key.length > maxSize)
-			maxSize = key.length;
+        maxSize = Math.max(maxSize, key.length)
     }
 
     var maxSpace = maxSize + 3;

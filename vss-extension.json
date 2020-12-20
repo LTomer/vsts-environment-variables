@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "environment-variables",
     "name": "Environment Variables",
-    "version": "0.0.3",
+    "version": "0.0.6",
     "publisher": "Tomer",
     "targets": [
         {
@@ -14,7 +14,7 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "Images/EV-128.png"        
+        "default": "images/icon-128.png"        
     },
     "files": [
         {
