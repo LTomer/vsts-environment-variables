@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "environment-variables",
     "name": "Environment Variables",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "publisher": "Tomer",
     "targets": [
         {
@@ -10,6 +10,9 @@
         }
     ],    
     "description": "Show Environment Variables.",
+    "galleryFlags": [
+        "Public"
+    ],
     "categories": [
         "Azure Pipelines"
     ],
@@ -24,6 +27,11 @@
     "tags": [
         "Environment Variables", "Variable"
     ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
     "repository": {
         "type": "git",
         "uri": "https://github.com/LTomer/vsts-environment-variables"
