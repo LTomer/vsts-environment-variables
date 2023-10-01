@@ -4,7 +4,7 @@
   "friendlyName": "Environment Variables",
   "description": "Show Environment Variables",
   "author": "Tomer Levitt",
-  "helpMarkDown": "",
+  "helpMarkDown": "https://github.com/LTomer/vsts-environment-variables",
   "category": "Utility",
   "visibility": [
     "Build",
@@ -14,8 +14,8 @@
   ],
   "version": {
     "Major": "0",
-    "Minor": "1",
-    "Patch": "21"
+    "Minor": "2",
+    "Patch": "0"
   },
   "minimumAgentVersion": "2.144.0",
   "instanceNameFormat": "Environment Variables",
@@ -25,7 +25,13 @@
         "type": "boolean",
         "label": "Print on Post-job",
         "helpMarkDown": "Set to print Environment Variables every time, otherwise, print on error."
-    }
+    },
+    {
+      "name": "ShowSensativeValue",
+      "type": "boolean",
+      "label": "Show Sensative Value",
+      "helpMarkDown": "If a variable name indicate that it contains sensative data and is not set as Azure DevOps Secret the value will print to the console - not recommended."
+  }
   ],
   "execution": {
     "Node10": {
