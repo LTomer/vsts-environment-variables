@@ -14,7 +14,7 @@ export function PrintVariable(): void {
 
     var maxSpace = maxSize + 3;
     
-    var sortArray = Object.keys(jsObj).sort((a, b) => a.localeCompare(b))
+    let sortArray = Object.keys(jsObj).sort((a, b) => a.localeCompare(b))
     for(var i in sortArray)
     {
         let currentKey = sortArray[i]
