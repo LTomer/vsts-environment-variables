@@ -20,8 +20,8 @@ export function PrintVariable(): void {
         let currentKey = sortArray[i]
         var spaces = Array(maxSpace - currentKey.length).join('.')
 
-        var tmp = currentKey.toUpperCase()
-        var value = jsObj[currentKey]
+        const tmp = currentKey.toUpperCase()
+        let value = jsObj[currentKey]
         if ( !flag && tmp != "VSTS_SECRET_VARIABLES" && (tmp.includes("TOKEN") || tmp.includes("PASSWORD") || tmp.includes("SECRET")))
             value = "(***)"
         
