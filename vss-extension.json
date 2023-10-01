@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "environment-variables",
     "name": "Environment Variables",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "publisher": "Tomer",
     "targets": [
         {
