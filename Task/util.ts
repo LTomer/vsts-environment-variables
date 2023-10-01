@@ -14,15 +14,15 @@ export function PrintVariable(): void {
 
     var maxSpace = maxSize + 3;
     
-    var sortArray = Object.keys(jsObj).sort()
+    var sortArray = Object.keys(jsObj).sort((a, b) => a.localeCompare(b))
     for(var i in sortArray)
     {
         let currentKey = sortArray[i]
         var spaces = Array(maxSpace - currentKey.length).join('.')
 
-        const tmp = currentKey.toUpperCase()
+        const tmpVarName = currentKey.toUpperCase()
         let value = jsObj[currentKey]
-        if ( !flag && tmp != "VSTS_SECRET_VARIABLES" && (tmp.includes("TOKEN") || tmp.includes("PASSWORD") || tmp.includes("SECRET")))
+        if ( !flag && tmpVarName != "VSTS_SECRET_VARIABLES" && (tmpVarName.includes("TOKEN") || tmpVarName.includes("PASSWORD") || tmpVarName.includes("SECRET")))
             value = "(***)"
         
         console.log(`- ${currentKey} ${spaces} ${value}`)
