@@ -10,28 +10,27 @@
     "Build",
     "Release"
   ],
-  "demands": [
-  ],
+  "demands": [],
   "version": {
     "Major": "0",
     "Minor": "2",
-    "Patch": "1"
+    "Patch": "4"
   },
   "minimumAgentVersion": "2.144.0",
   "instanceNameFormat": "Environment Variables",
   "inputs": [
     {
-        "name": "PostJob",
-        "type": "boolean",
-        "label": "Print on Post-job",
-        "helpMarkDown": "Set to print Environment Variables every time, otherwise, print on error."
+      "name": "PostJob",
+      "type": "boolean",
+      "label": "Print on Post-job",
+      "helpMarkDown": "Set to print Environment Variables every time, otherwise, print on error."
     },
     {
       "name": "ShowSensativeValue",
       "type": "boolean",
       "label": "Show Sensative Value",
-      "helpMarkDown": "If a variable name indicate that it contains sensative data and is not set as Azure DevOps Secret the value will print to the console - not recommended."
-  }
+      "helpMarkDown": "If a variable name indicate that it contains sensative data and is not set as Azure DevOps Secret the value will print to the console - NOT RECOMMENDED."
+    }
   ],
   "execution": {
     "Node10": {
@@ -40,8 +39,8 @@
   },
   "postjobexecution": {
     "Node10": {
-        "target": "envPost.js",
-        "argumentFormat": ""
+      "target": "envPost.js",
+      "argumentFormat": ""
     }
   }
 }

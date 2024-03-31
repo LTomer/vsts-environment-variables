@@ -2,13 +2,13 @@
     "manifestVersion": 1,
     "id": "environment-variables",
     "name": "Environment Variables",
-    "version": "0.0.13",
+    "version": "0.0.16",
     "publisher": "Tomer",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
     "description": "Show Environment Variables.",
     "galleryFlags": [
         "Public"
@@ -17,7 +17,7 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/icon-128.png"        
+        "default": "images/icon-128.png"
     },
     "files": [
         {
@@ -25,7 +25,8 @@
         }
     ],
     "tags": [
-        "Environment Variables", "Variable"
+        "Environment Variables",
+        "Variable"
     ],
     "content": {
         "details": {
