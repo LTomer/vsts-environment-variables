@@ -1,12 +1,12 @@
-# Environment-Variables - Version 1.*
+# Environment-Variables - Version 0.1.*
 
 The purpose of this task is to print the environment variable to the build console.
 If there is an error during the build process, it will print the environment variable on post-job, but if the checkbox "Print on Post job" selected it will print the details each time.
 
-## New on version 1.1.*
+## New on version 0.2.*
 
 The task will hide the value in case the variable name includes one of the words in the list:
-* PASSWORD
+* PASS
 * TOKEN
 * SECRET
 
