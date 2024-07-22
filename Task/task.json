@@ -14,7 +14,7 @@
   "version": {
     "Major": "0",
     "Minor": "2",
-    "Patch": "4"
+    "Patch": "8"
   },
   "minimumAgentVersion": "2.144.0",
   "instanceNameFormat": "Environment Variables",
@@ -34,11 +34,20 @@
   ],
   "execution": {
     "Node10": {
-      "target": "env.js"
+      "target": "env.js",
+      "argumentFormat": ""
+    },
+    "Node16": {
+      "target": "env.js",
+      "argumentFormat": ""
     }
   },
   "postjobexecution": {
     "Node10": {
+      "target": "envPost.js",
+      "argumentFormat": ""
+    },
+    "Node16": {
       "target": "envPost.js",
       "argumentFormat": ""
     }
