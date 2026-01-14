@@ -13,8 +13,8 @@
   "demands": [],
   "version": {
     "Major": "0",
-    "Minor": "2",
-    "Patch": "8"
+    "Minor": "3",
+    "Patch": "0"
   },
   "minimumAgentVersion": "2.144.0",
   "instanceNameFormat": "Environment Variables",
@@ -26,28 +26,28 @@
       "helpMarkDown": "Set to print Environment Variables every time, otherwise, print on error."
     },
     {
-      "name": "ShowSensativeValue",
+      "name": "ShowSensitiveValue",
       "type": "boolean",
-      "label": "Show Sensative Value",
-      "helpMarkDown": "If a variable name indicate that it contains sensative data and is not set as Azure DevOps Secret the value will print to the console - NOT RECOMMENDED."
+      "label": "Show Sensitive Value",
+      "helpMarkDown": "If a variable name indicate that it contains sensitive data and is not set as Azure DevOps Secret the value will print to the console - NOT RECOMMENDED."
     }
   ],
   "execution": {
-    "Node10": {
+    "Node16": {
       "target": "env.js",
       "argumentFormat": ""
     },
-    "Node16": {
+    "Node20_1": {
       "target": "env.js",
       "argumentFormat": ""
     }
   },
   "postjobexecution": {
-    "Node10": {
+    "Node16": {
       "target": "envPost.js",
       "argumentFormat": ""
     },
-    "Node16": {
+    "Node20_1": {
       "target": "envPost.js",
       "argumentFormat": ""
     }

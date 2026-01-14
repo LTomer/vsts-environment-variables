@@ -10,9 +10,9 @@ The task will hide the value in case the variable name includes one of the words
 * TOKEN
 * SECRET
 
-For example, The value of the variable name called 'UserPassword' will pring '(***)' instead of the value itself.
-> For debug mode you can set the flag 'ShowSensativeValue' to true and it will print the value in case it is not an Azure DevOps secret variable - ___Not recommended___
+For example, The value of the variable name called 'UserPassword' will print '(***)' instead of the value itself.
+> For debug mode you can set the flag 'ShowSensitiveValue' to true and it will print the value in case it is not an Azure DevOps secret variable - ___Not recommended___
 
-The task work on multiplatform and tested on Windows & Linux & Mac.
+The task work on multi-platform and tested on Windows & Linux & Mac.
 
 ![example](images/Example.png)

@@ -1,7 +1,7 @@
 import * as taskLib from 'azure-pipelines-task-lib/task';
 
 export function PrintVariable(): void {
-    const flag: boolean = taskLib.getBoolInput('ShowSensativeValue');
+    const flag: boolean = taskLib.getBoolInput('ShowSensitiveValue');
     if (flag)
         taskLib.warning("If an environment variable name contains 'PASS', 'TOKEN', or 'SECRET' and is not set as a secret, the value will be printed to the console. This practice is not recommended for security reasons.")
 
