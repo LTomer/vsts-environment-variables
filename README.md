@@ -1,9 +1,13 @@
-# Environment-Variables - Version 0.1.*
+# Environment-Variables
+
+## Task Version 0.1.*
 
 The purpose of this task is to print the environment variable to the build console.
 If there is an error during the build process, it will print the environment variable on post-job, but if the checkbox "Print on Post job" selected it will print the details each time.
 
-## New on version 0.2.*
+The task work on multi-platform and tested on Windows & Linux & Mac.
+
+## Task Version 0.2.*
 
 The task will hide the value in case the variable name includes one of the words in the list:
 * PASS
@@ -13,6 +17,9 @@ The task will hide the value in case the variable name includes one of the words
 For example, The value of the variable name called 'UserPassword' will print '(***)' instead of the value itself.
 > For debug mode you can set the flag 'ShowSensitiveValue' to true and it will print the value in case it is not an Azure DevOps secret variable - ___Not recommended___
 
-The task work on multi-platform and tested on Windows & Linux & Mac.
+## Task Version 0.3.*
+
+* Support Node20, 16, 10
+* Fix typo un the ShowSensitiveValue - Sorry if I broke your process it should use for debug only.
 
 ![example](images/Example.png)
